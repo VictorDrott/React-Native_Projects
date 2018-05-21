@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, 
-  Text, 
-  View, 
-  TextInput, 
-  KeyboardAvoidingView, 
-  TouchableOpacity, 
+import { StyleSheet,
+  Text,
+  View,
+  TextInput,
+  KeyboardAvoidingView,
+  TouchableOpacity,
   TouchableWithoutFeedback,
   Keyboard
 } from 'react-native';
@@ -19,20 +19,21 @@ class LoginForm extends React.Component {
     }
   }
 
-  userLogin = () => { 
+  userLogin = () => {
 
     const user={
       email: this.state.email,
       password: this.state.password,
     };
     console.log(user);
+    console.log('HEJ');
 
   }
 
   render() {
     return (
         <View style={styles.wrapInput}>
-          <TextInput 
+          <TextInput
             style={styles.Input}
             returnKeyType="next"
             placeholder="E-mail"
@@ -41,8 +42,8 @@ class LoginForm extends React.Component {
             onSubmitEditing={()=> this.refs.txtPassword.focus()}
             onChangeText={inputText => this.setState({email: inputText})}
           />
-          
-          <TextInput 
+
+          <TextInput
             style={styles.Input}
             returnKeyType="go"
             placeholder="Lösenord"
@@ -52,10 +53,10 @@ class LoginForm extends React.Component {
             ref={"txtPassword"}
             onChangeText={inputText => this.setState({password: inputText})}
           />
-          
+
           <TouchableOpacity style={styles.loginButton} onPress={this.userLogin}>
             <Text style={{color:'white',fontSize: 30}}>Logga in!</Text>
-          </TouchableOpacity> 
+          </TouchableOpacity>
         </View>
     );
   }
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
   },
   Input: {
     width: '70%',
-    fontSize: 25,   
+    fontSize: 25,
     height: 50,
     //backgroundColor: 'white',
     borderBottomColor: 'white',

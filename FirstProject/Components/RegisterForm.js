@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, 
-  Text, 
-  View, 
-  TextInput, 
-  TouchableOpacity, 
+import { StyleSheet,
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity,
 } from 'react-native';
 
-import {GetContent} from './Backend/api';
+//import {GetContent} from './Backend/api';
 
 class RegisterForm extends React.Component {
 
@@ -21,7 +21,7 @@ class RegisterForm extends React.Component {
     }
   }
 
-  userRegister = () => { 
+  userRegister = () => {
 
     const user={
       firstname: this.state.firstname,
@@ -30,21 +30,22 @@ class RegisterForm extends React.Component {
       password: this.state.password,
     };
 
-    api.GetData().then((data) => {
-      this.setState({data: data})
-      alert(this.state.data);
-    }).catch((error) => {
-      console.log(error);
+    fetch('http://localhost/Lycolifestyle/RegisterUser.php', {
+      /* method: 'POST',
+      headers:{
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+
+      }) */
     });
   }
-
-    
-
 
   render() {
     return (
         <View style={styles.wrapInput}>
-          <TextInput 
+          <TextInput
             style={styles.Input}
             returnKeyType="next"
             placeholder="Förnamn"
@@ -52,9 +53,9 @@ class RegisterForm extends React.Component {
             autocorrent={false}
             onSubmitEditing={()=> this.refs.txtLastname.focus()}
             onChangeText={inputText => this.setState({firstname: inputText})}
-          /> 
-          
-          <TextInput 
+          />
+
+          <TextInput
             style={styles.Input}
             returnKeyType="next"
             placeholder="Efternamn"
@@ -64,7 +65,7 @@ class RegisterForm extends React.Component {
             onChangeText={inputText => this.setState({lastname: inputText})}
             ref={"txtLastname"}
           />
-          <TextInput 
+          <TextInput
             style={styles.Input}
             returnKeyType="next"
             placeholder="E-mail"
@@ -74,8 +75,8 @@ class RegisterForm extends React.Component {
             onSubmitEditing={()=> this.refs.txtPassword.focus()}
             onChangeText={inputText => this.setState({email: inputText})}
           />
-          
-          <TextInput 
+
+          <TextInput
             style={styles.Input}
             returnKeyType="go"
             placeholder="Lösenord"
@@ -85,13 +86,13 @@ class RegisterForm extends React.Component {
             onChangeText={inputText => this.setState({password: inputText})}
             ref={"txtPassword"}
           />
-          
-          <TouchableOpacity 
-          style={styles.registerButton} 
+
+          <TouchableOpacity
+          style={styles.registerButton}
           onPress={this.userRegister}
           >
             <Text style={{color:'white',fontSize: 30}}>Registrera!</Text>
-          </TouchableOpacity> 
+          </TouchableOpacity>
         </View>
     );
   }
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
   },
   Input: {
     width: '70%',
-    fontSize: 25,   
+    fontSize: 25,
     height: 50,
     //backgroundColor: 'white',
     borderBottomColor: 'white',
@@ -127,7 +128,7 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderRadius: 10,
     paddingHorizontal: 20,
-    
+
   }
 })
 

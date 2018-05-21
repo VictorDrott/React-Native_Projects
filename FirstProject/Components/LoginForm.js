@@ -27,6 +27,7 @@ class LoginForm extends React.Component {
     };
     console.log(user);
     console.log('HEJ');
+    alert('hej');
 
   }
 

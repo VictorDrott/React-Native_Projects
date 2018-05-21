@@ -29,17 +29,22 @@ class RegisterForm extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
-
+    //alert('hej');
     fetch('http://localhost/Lycolifestyle/RegisterUser.php', {
-      /* method: 'POST',
+       method: 'POST',
       headers:{
-        Accept: 'application/json',
+        'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-
-      }) */
-    });
+        key: 'test',
+      })
+    })
+    .then((response) => response.json())
+    .then((res) => {
+      alert (res.message);
+    })
+    .done();
   }
 
   render() {

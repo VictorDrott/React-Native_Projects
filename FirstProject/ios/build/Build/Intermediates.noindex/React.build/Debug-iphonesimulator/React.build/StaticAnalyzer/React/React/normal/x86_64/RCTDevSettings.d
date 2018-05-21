@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h

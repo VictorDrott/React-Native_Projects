@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Views/UIView+React.m \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Views/RCTLayout.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/Draatt/Desktop/Expo_XDE_Projects/FirstProject/node_modules/react-native/React/Base/RCTInvalidating.h

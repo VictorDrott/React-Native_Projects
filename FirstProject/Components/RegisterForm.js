@@ -45,9 +45,7 @@ class RegisterForm extends React.Component {
       'userData', userData,
     );
 
-
-
-     fetch('http://localhost/Lycolifestyle/RegisterUser.php', {
+     fetch('http://localhost:8080/projects/Lycolifestyle/RegisterUser.php', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

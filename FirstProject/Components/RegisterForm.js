@@ -29,24 +29,40 @@ class RegisterForm extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
+    var person = {
+      test : "Victor",
+      age: 18
+    }
     //alert('hej');
-    fetch('http://localhost/Lycolifestyle/RegisterUser.php', {
-       method: 'POST',
-      headers:{
-        'Accept': 'application/json',
+    var userData = JSON.stringify({
+      firstname: user.firstname,
+      lastname: user.lastname,
+      email: user.email,
+      password: user.password,
+  });
+    var formData = new FormData();
+    formData.append(
+      'userData', userData,
+    );
+
+
+
+     fetch('http://localhost/Lycolifestyle/RegisterUser.php', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        key: 'test',
-      })
+      body: formData,
+
     })
-    .then((response) => response.json())
-    .then((res) => {
-      alert (res.message);
+    .then((res) => res.json())
+    .then((response) => {
+      alert (response);
+      //console.log(user);
     })
     .done();
   }
-
   render() {
     return (
         <View style={styles.wrapInput}>

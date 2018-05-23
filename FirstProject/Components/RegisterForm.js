@@ -52,7 +52,6 @@ class RegisterForm extends React.Component {
         'Content-Type': 'application/json',
       },
       body: formData,
-
     })
     .then((res) => res.json())
     .then((response) => {

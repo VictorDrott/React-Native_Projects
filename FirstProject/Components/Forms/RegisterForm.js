@@ -29,10 +29,7 @@ class RegisterForm extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
-    var person = {
-      test : "Victor",
-      age: 18
-    }
+
     //alert('hej');
     var userData = JSON.stringify({
       firstname: user.firstname,
@@ -55,8 +52,11 @@ class RegisterForm extends React.Component {
     })
     .then((res) => res.json())
     .then((response) => {
-      alert (response);
-      //console.log(user);
+      if(response == 'register success'){
+        this.props.navigation.navigate('HomeScreen');
+      }else{
+        alert(response);
+      }
     })
     .done();
   }

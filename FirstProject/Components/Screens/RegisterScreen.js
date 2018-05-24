@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, 
-  View, TextInput, 
+import { StyleSheet, Text,
+  View, TextInput,
   KeyboardAvoidingView, TouchableWithoutFeedback,
   Keyboard, SafeAreaView,
   ImageBackground, StatusBar,
   TouchableOpacity,
 } from 'react-native';
 
-import RegisterForm from '../RegisterForm';
+import RegisterForm from '../Forms/RegisterForm';
 
 class RegisterScreen extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class RegisterScreen extends React.Component {
                 <Text style={{fontSize: 40, color: 'white',fontWeight: 'bold'}}>Registrera dig!</Text>
               </View>
               <View style={styles.formWrap}>
-                <RegisterForm/>
+                <RegisterForm navigation={this.props.navigation}/>
               </View>
             </View>
           </TouchableWithoutFeedback>
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     //backgroundColor: 'rgb(80,80,80)',
     justifyContent: 'center',
     alignItems: 'center',
-    
+
   },
   formWrap:{
     flex: 3,

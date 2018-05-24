@@ -25,10 +25,34 @@ class LoginForm extends React.Component {
       email: this.state.email,
       password: this.state.password,
     };
-    console.log(user);
-    console.log('HEJ');
-    alert('hej');
 
+    //alert('hej');
+    var userData = JSON.stringify({
+      email: user.email,
+      password: user.password,
+  });
+    var formData = new FormData();
+    formData.append(
+      'userData', userData,
+    );
+
+     fetch('http://localhost:8080/projects/Lycolifestyle/LoginUser.php', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: formData,
+    })
+    .then((res) => res.json())
+    .then((response) => {
+      if(response == 'login success'){
+        this.props.navigation.navigate('HomeScreen');
+      }else{
+        alert(response);
+      }
+    })
+    .done();
   }
 
   render() {

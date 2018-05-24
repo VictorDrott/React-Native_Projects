@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, 
-  View, TextInput, 
+import { StyleSheet, Text,
+  View, TextInput,
   KeyboardAvoidingView, TouchableWithoutFeedback,
   Keyboard, SafeAreaView,
   ImageBackground, StatusBar,
   TouchableOpacity,
 } from 'react-native';
 
-import LoginForm from '../LoginForm';
+import LoginForm from '../Forms/LoginForm';
 
 class LoginScreen extends React.Component {
   render() {
@@ -21,15 +21,15 @@ class LoginScreen extends React.Component {
                 <Text style={{fontSize: 40, color: 'white',fontWeight: 'bold'}}>Välkommen</Text>
               </View>
               <View style={styles.logo}>
-                <TouchableOpacity 
-                style={styles.loginButton} 
+                <TouchableOpacity
+                style={styles.loginButton}
                 onPress={() => this.props.navigation.navigate('RegisterScreen')}
                 >
                   <Text style={{color:'white',fontSize: 30}}>Registrera dig</Text>
-                </TouchableOpacity> 
+                </TouchableOpacity>
               </View>
               <View style={styles.formWrap}>
-                <LoginForm/>
+                <LoginForm navigation={this.props.navigation}/>
               </View>
             </View>
           </TouchableWithoutFeedback>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     //backgroundColor: 'rgb(80,80,80)',
     justifyContent: 'center',
 
-  }, 
+  },
   loginButton: {
     height: 50,
     backgroundColor: 'black',
